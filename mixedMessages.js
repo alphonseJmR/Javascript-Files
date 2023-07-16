@@ -105,14 +105,24 @@ const randomAstrology = () => {
         console.log('It is a collective objective that all known creatures born between these dates are in high likelihood to be stoners of any type.  Feel how you want about it.')
     }else if(newRandom >= 141 && newRandom <= 171) {
         console.log('Gemini');
+        console.log('Born May 21 - Jun 20:');
+        console.log('Most frequently known for getting lost in funhouse mirror houses.  These creatures are in general of average intelligence.  Once in a while though, a real nitwit makes it in.')
     }else if(newRandom >= 172 && newRandom <= 203) {
         console.log('Cancer');
+        console.log('Born Jun 21 - Jul 22:');
+        console.log('These outdoorsy folks are commonly not known for ever having heard of their astrological sign, nor the common signs of skin cancer.  At least they are having fun.')
     }else if(newRandom >= 204 && newRandom <= 234) {
         console.log('Leo');
+        console.log('Born Jul 23 - Aug 22:');
+        console.log('It is typically unclear what spectrum these creatures belong on.  Dangerous: AVOID.');
     }else if(newRandom >= 235 && newRandom <= 265) {
         console.log('Virgo');
+        console.log('Born Aug 23 - Sep 22:');
+        console.log('Most virgos have a hard time telling the difference between left and right.  So congratulations on not getting t-boned today...  Yet.')
     }else if(newRandom >= 266 && newRandom <= 295) {
         console.log('Libra');
+        console.log('Born Sep 23 - Oct 22:');
+        console.log('The perculiar medical conditions, high blood flow nipples (resulting in very purple areolas during arousal), affect both male and female alike.')
     }else if(newRandom >= 296 && newRandom <= 325) {
         console.log('Scorpio');
     }else if(newRandom >= 325 && newRandom <= 355) {
