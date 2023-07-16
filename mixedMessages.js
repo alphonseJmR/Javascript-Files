@@ -173,3 +173,4 @@ default:
 }
 
 console.log(opPick())
+setTimeout(() => '', 850);
