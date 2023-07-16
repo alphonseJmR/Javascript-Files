@@ -93,10 +93,16 @@ const randomAstrology = () => {
         console.log('Creatures born betwixth these dates are alarmingly good in their sense of determination.  This is a double edge blade as they are likely to be determined to engage in relationships with q-tips.')
     }else if(newRandom >= 49 && newRandom <= 79) {
         console.log('Pices');
+        console.log('Born Feb 19 - Mar 20:')
+        console.log('GET DOWN!  Sorry.. I thought there was a Pices standing behind you.  That would have been absolutely terrifying.');
     }else if(newRandom >= 80 && newRandom <= 109) {
         console.log('Aries');
+        console.log('Born Mar 21 - Apr 19:')
+        console.log('It has never been fair the way you judge other peoples saggy bits.  They are people as well, and maybe one day, you will be just as saggy, you saggy sog sandwich.');
     }else if(newRandom >= 110 && newRandom <= 140) {
         console.log('Taurus');
+        console.log('Born Apr 20 - May 20:')
+        console.log('It is a collective objective that all known creatures born between these dates are in high likelihood to be stoners of any type.  Feel how you want about it.')
     }else if(newRandom >= 141 && newRandom <= 171) {
         console.log('Gemini');
     }else if(newRandom >= 172 && newRandom <= 203) {
