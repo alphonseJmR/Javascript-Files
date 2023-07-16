@@ -9,6 +9,7 @@ const returnRandomBase = input => {
     predetermined factors words.
 
 */
+
 const randomSentance = () => {
 
 let sentance = ''
@@ -75,3 +76,45 @@ return sentance;
 }
 
 console.log(randomSentance())
+
+
+const randomAstrology = () => {
+
+    let newRandom = Math.floor(Math.random() * 365)
+    console.log(newRandom)
+
+    if(newRandom >= 356 || newRandom <= 18) {
+        console.log('Capricorns:');
+        console.log('Born Dec 22 - Jan 19:');
+        console.log('Naturally known to be the most deviant of any living creature.  They will unknowningly to you play with your soul until it can feast upon the meal it spends so long cooking.');
+    }else if(newRandom >= 19 && newRandom <= 48) {
+        console.log('Aquarius');
+        console.log('Born Jan 20 - Feb 18:');
+        console.log('Creatures born betwixth these dates are alarmingly good in their sense of determination.  This is a double edge blade as they are likely to be determined to engage in relationships with q-tips.')
+    }else if(newRandom >= 49 && newRandom <= 79) {
+        console.log('Pices');
+    }else if(newRandom >= 80 && newRandom <= 109) {
+        console.log('Aries');
+    }else if(newRandom >= 110 && newRandom <= 140) {
+        console.log('Taurus');
+    }else if(newRandom >= 141 && newRandom <= 171) {
+        console.log('Gemini');
+    }else if(newRandom >= 172 && newRandom <= 203) {
+        console.log('Cancer');
+    }else if(newRandom >= 204 && newRandom <= 234) {
+        console.log('Leo');
+    }else if(newRandom >= 235 && newRandom <= 265) {
+        console.log('Virgo');
+    }else if(newRandom >= 266 && newRandom <= 295) {
+        console.log('Libra');
+    }else if(newRandom >= 296 && newRandom <= 325) {
+        console.log('Scorpio');
+    }else if(newRandom >= 325 && newRandom <= 355) {
+        console.log('Sagittarius');
+    }else {
+        console.log('Random Number out of boundry');
+    }
+
+}
+ 
+console.log(randomAstrology())
