@@ -9,6 +9,9 @@ const returnRandomBase = input => {
     predetermined factors words.
 
 */
+const randomSentance = () => {
+
+let sentance = ''
 
 const fanboys = ['for', 'and', 'nor', 'but', 'or', 'yet', 'so'];
 const fanChoice = () => {
@@ -59,14 +62,16 @@ const greet = () => {
     return greets;
 }
 
+sentance += greet();
+sentance += ', ';
+sentance += proChoice()
+sentance += " may be "
+sentance += adjChoice() + ' '
+sentance += fanChoice()
+sentance += " a "
+sentance += verbChoice() + ' '
+sentance += objChoice()
+return sentance;
+}
 
-/*
-
-    Madlib
-
-        [greetings], 
-
-
-*/
-
-console.log(greet() + ', ' + proChoice(), adjChoice(), fanChoice(), verbChoice(), objChoice())
+console.log(randomSentance())
