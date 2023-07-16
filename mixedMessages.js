@@ -44,7 +44,7 @@ const verbChoice = () => {
 }
 
 const objects = ['amphorah', 'basketball', 'cat', 'Doug', 'emerald', 'fan', 'garden', 'hoes', 'Ian', 
-'job', 'klienbottel', 'lamintator', 'Megan', 'Nigel', 'open-source', 'picometer', 'quarters', 'resin', 'Stanford', 'turmeric',
+'job', 'klienbottle', 'lamintator', 'Megan', 'Nigel', 'open-source', 'picometer', 'quarters', 'resin', 'Stanford', 'turmeric',
 'uvula', 'Vareena', 'xylophone', 'zebra'];
 const objChoice = () => {
     let objs = (objects[returnRandomBase(objects)])
@@ -60,7 +60,6 @@ const greet = () => {
 }
 
 
-
 /*
 
     Madlib
@@ -70,4 +69,4 @@ const greet = () => {
 
 */
 
-console.log(greet(), proChoice(), adjChoice(), fanChoice(), verbChoice(), objChoice())
+console.log(greet() + ', ' + proChoice(), adjChoice(), fanChoice(), verbChoice(), objChoice())
