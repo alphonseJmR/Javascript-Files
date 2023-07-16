@@ -75,9 +75,6 @@ sentance += objChoice()
 return sentance;
 }
 
-console.log(randomSentance())
-
-
 const randomAstrology = () => {
 
     let newRandom = Math.floor(Math.random() * 365)
@@ -137,4 +134,42 @@ const randomAstrology = () => {
 
 }
  
-console.log(randomAstrology())
+const inspiringWords = () => {
+const nonInspirations = [
+    'Just stop.  You cannot do it.',
+    'People are looking at you weird..  What did you do?',
+    'You should really hide and give yourself a whiff.  Did you shower?',
+    'Stop deep scratching your bunghole in the library.  The book your pretending to read is not nearly as rotten smelling.',
+    'Dude, stop touching the controlling device.  Your fingers are grossly sticky.',
+    'It is pretty clear why your mother doesn\'t love you anymore.',
+    'Why did you have that ruler custom printed?  You know the one in your bathroom?',
+    'Fine, I\'ll say what everyone is thinking.  Your haircut looks terrible.',
+    'Yeesh, you\'re actually wearing that?  If only you could see my face right now.',
+    'When you look deep into your eyes in the mirror.. can you see why you have no friends?'
+]
+
+let todaysWords = nonInspirations[(Math.floor(Math.random() * nonInspirations.length))];
+return todaysWords;
+}
+
+const opPick = () => {
+
+  let num = Math.floor(Math.random() * 3);
+
+  switch(num){
+
+case 0:
+  console.log(randomSentance());
+  break;
+case 1:
+  console.log(randomAstrology());
+  break;
+case 2:
+  console.log(inspiringWords());
+  break;
+default:
+  console.log('Ehh What you want from me ``-_-')
+}
+}
+
+console.log(opPick())
