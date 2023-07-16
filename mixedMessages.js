@@ -2,66 +2,58 @@ const returnRandomBase = input => {
     let random = Math.floor(Math.random() * input.length);
     return random;
 }
-
-/*
-
-    This program is to create a mad-lib style response based on several different
-    predetermined factors words.
-
-*/
-
 const randomSentance = () => {
 
-let sentance = ''
+  let sentance = ''
 
-const fanboys = ['for', 'and', 'nor', 'but', 'or', 'yet', 'so'];
-const fanChoice = () => {
+  const fanboys = ['for', 'and', 'nor', 'but', 'or', 'yet', 'so'];
+  const fanChoice = () => {
     let choice = (fanboys[returnRandomBase(fanboys)])
     return choice;
-}
+  }
 
-const pronouns = ['He', 'he', 'She', 'she', 'they', 'them', 'his', 'hers', 'theirs'];
-const proChoice = () => {
+  const pronouns = ['He', 'he', 'She', 'she', 'they', 'them', 'his', 'hers', 'theirs'];
+  const proChoice = () => {
     let pros = (pronouns[returnRandomBase(pronouns)])
     return pros;
-}
+  }
 
-const adjective = ['green', 'blue', 'slippery', 'rugged', 'tough', 'enormous', 'pitiful', 'fantastic', 
+  const adjective = ['green', 'blue', 'slippery', 'rugged', 'tough', 'enormous', 'pitiful', 'fantastic', 
 'beautiful', 'gassy', 'slightly', 'chalky', 'stinky', 'foul', 'metallic', 'shameful', 'festive',
 'twelve', '10^e^6.016', 'wet', 'audible', 'balmy', 'calloused', 'deaf', 'enlarged', 'fragrent', 'gutted',
 'haggered', 'insatiable', 'japanese', 'korean', 'laotian', 'malaysain', 'north american', 'oceanic', 'pearl', 'quite', 'realistic',
 'sumptuous', 'tall', 'ultra-violet', 'venusian', 'watertight', 'yellow', 'zilch'];
-const adjChoice = () => {
+  const adjChoice = () => {
     let adjs = ''
     adjs = adjective[returnRandomBase(adjective)]
     return adjs;
-}
+  }
 
 
-const verbs = ['sacking', 'programming', 'pondering', 'alloting', 'bashing', 'crafting', 'deceiving', 
+  const verbs = ['sacking', 'programming', 'pondering', 'alloting', 'bashing', 'crafting', 'deceiving', 
 'eating', 'fumbling', 'grabbing', 'hambone', 'inking', 'jousting', 'klondiking', 'lementing', 'moaning', 'nagging',
 'ordering', 'partying', 'queueing', 'roosting', 'stamping', 'terraforming', 'upchucking', 'vilifying',
 'weakening', 'x-raying', 'yapping', 'zapping'];
-const verbChoice = () => {
+  const verbChoice = () => {
     let verb = (verbs[returnRandomBase(verbs)])
     return verb;
-}
+  }
 
-const objects = ['amphorah', 'basketball', 'cat', 'Doug', 'emerald', 'fan', 'garden', 'hoes', 'Ian', 
+  const objects = ['amphorah', 'basketball', 'cat', 'Doug', 'emerald', 'fan', 'garden', 'hoes', 'Ian', 
 'job', 'klienbottle', 'lamintator', 'Megan', 'Nigel', 'open-source', 'picometer', 'quarters', 'resin', 'Stanford', 'turmeric',
 'uvula', 'Vareena', 'xylophone', 'zebra'];
-const objChoice = () => {
+  const objChoice = () => {
     let objs = (objects[returnRandomBase(objects)])
     return objs;
-}
+  }
 
-const greetings = ['Hello', 'Bonjour', 'Guten Tag', 'Marhaba', 'Ahoj', 'Hej', 'Salam', 'Dia dhuit', 
+  const greetings = ['Hello', 'Bonjour', 'Guten Tag', 'Marhaba', 'Ahoj', 'Hej', 'Salam', 'Dia dhuit', 
 'Geia', 'Namaste', 'Ciao', 'Konichiwa', 'Anyeong haseyo', 'Salve', 'Ni hao', 'Namaskara', 'Privet',
 'Hola', 'Halla', 'Swasdi', 'Assalamu Alaykum'];
-const greet = () => {
+  const greet = () => {
     let greets = greetings[returnRandomBase(greetings)]
     return greets;
-}
+  }
 
 sentance += greet();
 sentance += ', ';
@@ -72,18 +64,16 @@ sentance += fanChoice()
 sentance += " a "
 sentance += verbChoice() + ' '
 sentance += objChoice()
+
 return sentance;
 }
-
 const randomAstrology = () => {
 
     let newRandom = Math.floor(Math.random() * 365)
-    console.log(newRandom)
-
     if(newRandom >= 356 || newRandom <= 18) {
-        console.log('Capricorns:');
-        console.log('Born Dec 22 - Jan 19:');
-        console.log('Naturally known to be the most deviant of any living creature.  They will unknowningly to you play with your soul until it can feast upon the meal it spends so long cooking.');
+        return `'Capricorns:')
+        'Born Dec 22 - Jan 19:');
+        'Naturally known to be the most deviant of any living creature.  They will unknowningly to you play with your soul until it can feast upon the meal it spends so long cooking.')`
     }else if(newRandom >= 19 && newRandom <= 48) {
         console.log('Aquarius');
         console.log('Born Jan 20 - Feb 18:');
@@ -133,13 +123,13 @@ const randomAstrology = () => {
     }
 
 }
- 
+
 const inspiringWords = () => {
 const nonInspirations = [
     'Just stop.  You cannot do it.',
     'People are looking at you weird..  What did you do?',
     'You should really hide and give yourself a whiff.  Did you shower?',
-    'Stop deep scratching your bunghole in the library.  The book your pretending to read is not nearly as rotten smelling.',
+    'Stop deep scratching your bunghole in the library.  You\'ll leave crappy fingerprints on the pages.',
     'Dude, stop touching the controlling device.  Your fingers are grossly sticky.',
     'It is pretty clear why your mother doesn\'t love you anymore.',
     'Why did you have that ruler custom printed?  You know the one in your bathroom?',
@@ -158,19 +148,35 @@ const opPick = () => {
 
   switch(num){
 
-case 0:
-  console.log(randomSentance());
-  break;
-case 1:
-  console.log(randomAstrology());
-  break;
-case 2:
-  console.log(inspiringWords());
-  break;
-default:
-  console.log('Ehh What you want from me ``-_-')
+    case 0:
+      console.log(randomSentance());
+      break;
+    case 1:
+      console.log(randomAstrology());
+      break;
+    case 2:
+      console.log(inspiringWords());
+      break;
+    default:
+      console.log('Ehh What you want from me ``-_-')
 }
 }
 
-console.log(opPick())
 setTimeout(() => '', 850);
+
+const statements = () => {
+    return {
+        randomSentence: randomSentance(),
+        randomAstrology: randomAstrology(),
+        randomInspirations: inspiringWords(),
+        totalOutput() {
+            return `
+            \n Your random sentence for the day.\n ${this.randomSentence} \n
+            \n Your random astrology fact: \n ${this.randomAstrology}\n
+            \n Finally some inspiring words: \n ${this.randomInspirations} \n
+            `
+        }
+    }
+}
+
+console.log(statements().totalOutput())
