@@ -71,53 +71,77 @@ const randomAstrology = () => {
 
     let newRandom = Math.floor(Math.random() * 365)
     if(newRandom >= 356 || newRandom <= 18) {
-        return `'Capricorns:')
-        'Born Dec 22 - Jan 19:');
-        'Naturally known to be the most deviant of any living creature.  They will unknowningly to you play with your soul until it can feast upon the meal it spends so long cooking.')`
+        return `
+        Capricorns:\n
+        Born Dec 22 - Jan 19: \n
+        Naturally known to be the most deviant of any living creature.  They will unknowningly to you play with your soul until it can feast upon the meal it spends so long cooking.
+        `
     }else if(newRandom >= 19 && newRandom <= 48) {
-        console.log('Aquarius');
-        console.log('Born Jan 20 - Feb 18:');
-        console.log('Creatures born betwixth these dates are alarmingly good in their sense of determination.  This is a double edge blade as they are likely to be determined to engage in relationships with q-tips.')
+        return `
+        Aquarius:\n
+        Born Jan 20 - Feb 18:\n
+        Creatures born betwixth these dates are alarmingly good in their sense of determination.  This is a double edge blade as they are likely to be determined to engage in relationships with q-tips.
+        `
     }else if(newRandom >= 49 && newRandom <= 79) {
-        console.log('Pices');
-        console.log('Born Feb 19 - Mar 20:')
-        console.log('GET DOWN!  Sorry.. I thought there was a Pices standing behind you.  That would have been absolutely terrifying.');
+        return `
+        Pices: \n
+        Born Feb 19 - Mar 20: \n
+        GET DOWN!  Sorry.. I thought there was a Pices standing behind you.  That would have been absolutely terrifying.
+        `
     }else if(newRandom >= 80 && newRandom <= 109) {
-        console.log('Aries');
-        console.log('Born Mar 21 - Apr 19:')
-        console.log('It has never been fair the way you judge other peoples saggy bits.  They are people as well, and maybe one day, you will be just as saggy, you saggy sog sandwich.');
+        return `
+        Aries: \n
+        Born Mar 21 - Apr 19: \n
+        It has never been fair the way you judge other peoples saggy bits.  They are people as well, and maybe one day, you will be just as saggy, you saggy sog sandwich.
+        `
     }else if(newRandom >= 110 && newRandom <= 140) {
-        console.log('Taurus');
-        console.log('Born Apr 20 - May 20:')
-        console.log('It is a collective objective that all known creatures born between these dates are in high likelihood to be stoners of any type.  Feel how you want about it.')
+       return `
+        Taurus: \n
+        Born Apr 20 - May 20: \n
+        It is a collective objective that all known creatures born between these dates are in high likelihood to be stoners of any type.  Feel how you want about it.
+        `
     }else if(newRandom >= 141 && newRandom <= 171) {
-        console.log('Gemini');
-        console.log('Born May 21 - Jun 20:');
-        console.log('Most frequently known for getting lost in funhouse mirror houses.  These creatures are in general of average intelligence.  Once in a while though, a real nitwit makes it in.')
+        return `
+        Gemini: \n
+        Born May 21 - Jun 20: \n
+        Most frequently known for getting lost in funhouse mirror houses.  These creatures are in general of average intelligence.  Once in a while though, a real nitwit makes it in.
+        `
     }else if(newRandom >= 172 && newRandom <= 203) {
-        console.log('Cancer');
-        console.log('Born Jun 21 - Jul 22:');
-        console.log('These outdoorsy folks are commonly not known for ever having heard of their astrological sign, nor the common signs of skin cancer.  At least they are having fun.')
+        return `
+        Cancer: \n
+        Born Jun 21 - Jul 22: \n
+        These outdoorsy folks are commonly not known for ever having heard of their astrological sign, nor the common signs of skin cancer.  At least they are having fun.
+        `
     }else if(newRandom >= 204 && newRandom <= 234) {
-        console.log('Leo');
-        console.log('Born Jul 23 - Aug 22:');
-        console.log('It is typically unclear what spectrum these creatures belong on.  Dangerous: AVOID.');
+        return `
+        Leo: \n
+        Born Jul 23 - Aug 22: \n
+        It is typically unclear what spectrum these creatures belong on.  Dangerous: AVOID.
+        `
     }else if(newRandom >= 235 && newRandom <= 265) {
-        console.log('Virgo');
-        console.log('Born Aug 23 - Sep 22:');
-        console.log('Most virgos have a hard time telling the difference between left and right.  So congratulations on not getting t-boned today...  Yet.')
+       return `
+        Virgo: \n
+        Born Aug 23 - Sep 22: \n
+        Most virgos have a hard time telling the difference between left and right.  So congratulations on not getting t-boned today...  Yet.
+        `
     }else if(newRandom >= 266 && newRandom <= 295) {
-        console.log('Libra');
-        console.log('Born Sep 23 - Oct 22:');
-        console.log('The perculiar medical conditions, high blood flow nipples (resulting in very purple areolas during arousal), affect both male and female alike.')
+        return `
+        Libra: \n
+        Born Sep 23 - Oct 22: \n
+        The perculiar medical conditions, high blood flow nipples (resulting in very purple areolas during arousal), affect both male and female alike.
+        `
     }else if(newRandom >= 296 && newRandom <= 325) {
-        console.log('Scorpio');
-        console.log('Born Oct 23 - Nov 21:')
-        console.log('Firey at heart, these creatures will happy cuddle you, you fall into the sweet loving and warm oblivion of their warm embrace.  It is not advised to stay in that embrace long, as they are known to melt your flesh into theirs.')
+        return `
+        Scorpio: \n
+        Born Oct 23 - Nov 21: \n
+        Firey at heart, these creatures will happy cuddle you, you fall into the sweet loving and warm oblivion of their warm embrace.  It is not advised to stay in that embrace long, as they are known to melt your flesh into theirs.
+        `
     }else if(newRandom >= 325 && newRandom <= 355) {
-        console.log('Sagittarius');
-        console.log('Born Nov 22 - Dec 21:');
-        console.log('Born among the cold early winter nights (or days) creatures hailing from these time frames are not the most warm of heart.  Highly intelligent they are, because the cold enhances their natural processing powers.')
+        return `
+        Sagittarius: \n
+        Born Nov 22 - Dec 21: \n
+        Born among the cold early winter nights (or days) creatures hailing from these time frames are not the most warm of heart.  Highly intelligent they are, because the cold enhances their natural processing powers.
+        `
     }else {
         console.log('Random Number out of boundry');
     }
