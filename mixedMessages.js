@@ -125,8 +125,12 @@ const randomAstrology = () => {
         console.log('The perculiar medical conditions, high blood flow nipples (resulting in very purple areolas during arousal), affect both male and female alike.')
     }else if(newRandom >= 296 && newRandom <= 325) {
         console.log('Scorpio');
+        console.log('Born Oct 23 - Nov 21:')
+        console.log('Firey at heart, these creatures will happy cuddle you, you fall into the sweet loving and warm oblivion of their warm embrace.  It is not advised to stay in that embrace long, as they are known to melt your flesh into theirs.')
     }else if(newRandom >= 325 && newRandom <= 355) {
         console.log('Sagittarius');
+        console.log('Born Nov 22 - Dec 21:');
+        console.log('Born among the cold early winter nights (or days) creatures hailing from these time frames are not the most warm of heart.  Highly intelligent they are, because the cold enhances their natural processing powers.')
     }else {
         console.log('Random Number out of boundry');
     }
