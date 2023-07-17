@@ -108,77 +108,106 @@ return sentance;
 const randomAstrology = () => {
 
     let newRandom = Math.floor(Math.random() * 365)
+
+    const astrologicalFun = [
+        'While is it true that creatures of this sign have severe disabilites, do not misjudge their ability to feel.  That\'s bad too.',
+        'Naturally known for being good in social situations, they are the life of the party.  They are however dead, in bed.',
+        'It\'s honestly hard to take your eyes off these creatures.  They are usually horribly misshapen.',
+        'Today is not the day you should be a dick.  Unbind those anuses.',
+        'Run.',
+        'Formally netural, they suffer from severe internal battles.  Get a drink you alcoholic.',
+        'My eighth ball says you will be, quote, "Aight dawg".',
+        'Careful, you\'re probably about to get a papercut.',
+        'These creatures may seem like hunched over dorks, and you\'re right, but don\'t say it.',
+        'Seemingly dumb, and also not attractive, they do accel at things that have no tangible value.',
+        'You need a support animal.  Probably just a stuffed one.',
+        'These creatures likely have a stick hanging out their rears.  Help them out, kick it all the way up.',
+        'Go check your ruler, something got bigger.. or smaller, depending on what you\'re looking for.',
+        'Naturally known to be the most deviant of any living creature.  They will unknowningly to you play with your soul until it can feast upon the meal it spends so long cooking.',
+        'Creatures born betwixth these dates are alarmingly good in their sense of determination.  This is a double edge blade as they are likely to be determined to engage in relationships with q-tips.',
+        'GET DOWN!  Sorry.. I thought there was a Pices standing behind you.  That would have been absolutely terrifying.',
+        'It has never been fair the way you judge other peoples saggy bits.  They are people as well, and maybe one day, you will be just as saggy, you saggy sog sandwich.',
+        'It is a collective objective that all known creatures born between these dates are in high likelihood to be stoners of any type.  Feel how you want about it.',
+        'Most frequently known for getting lost in funhouse mirror houses.  These creatures are in general of average intelligence.  Once in a while though, a real nitwit makes it in.',
+        'These outdoorsy folks are commonly not known for ever having heard of their astrological sign, nor the common signs of skin cancer.  At least they are having fun.',
+        'It is typically unclear what spectrum these creatures belong on.  Dangerous: AVOID.',
+        'Most of these creatures have a hard time telling the difference between left and right.  So congratulations on not getting t-boned today...  Yet.',
+        'The perculiar medical conditions, high blood flow nipples (resulting in very purple areolas during arousal), affect both male and female alike.',
+        'Firey at heart, these creatures will happy cuddle you, you fall into the sweet loving and warm oblivion of their warm embrace.  It is not advised to stay in that embrace long, as they are known to melt your flesh into theirs.',
+        'Born among the cold early nights (or days) creatures hailing from these time frames are not the most warm of heart.  Highly intelligent they are, because the cold enhances their natural processing powers.'
+    ]
+
     if(newRandom >= 356 || newRandom <= 18) {
         return `
         Capricorns:\n
         Born Dec 22 - Jan 19: \n
-        Naturally known to be the most deviant of any living creature.  They will unknowningly to you play with your soul until it can feast upon the meal it spends so long cooking.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 19 && newRandom <= 48) {
         return `
         Aquarius:\n
         Born Jan 20 - Feb 18:\n
-        Creatures born betwixth these dates are alarmingly good in their sense of determination.  This is a double edge blade as they are likely to be determined to engage in relationships with q-tips.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 49 && newRandom <= 79) {
         return `
         Pices: \n
         Born Feb 19 - Mar 20: \n
-        GET DOWN!  Sorry.. I thought there was a Pices standing behind you.  That would have been absolutely terrifying.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 80 && newRandom <= 109) {
         return `
         Aries: \n
         Born Mar 21 - Apr 19: \n
-        It has never been fair the way you judge other peoples saggy bits.  They are people as well, and maybe one day, you will be just as saggy, you saggy sog sandwich.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 110 && newRandom <= 140) {
        return `
         Taurus: \n
         Born Apr 20 - May 20: \n
-        It is a collective objective that all known creatures born between these dates are in high likelihood to be stoners of any type.  Feel how you want about it.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 141 && newRandom <= 171) {
         return `
         Gemini: \n
         Born May 21 - Jun 20: \n
-        Most frequently known for getting lost in funhouse mirror houses.  These creatures are in general of average intelligence.  Once in a while though, a real nitwit makes it in.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 172 && newRandom <= 203) {
         return `
         Cancer: \n
         Born Jun 21 - Jul 22: \n
-        These outdoorsy folks are commonly not known for ever having heard of their astrological sign, nor the common signs of skin cancer.  At least they are having fun.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 204 && newRandom <= 234) {
         return `
         Leo: \n
         Born Jul 23 - Aug 22: \n
-        It is typically unclear what spectrum these creatures belong on.  Dangerous: AVOID.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 235 && newRandom <= 265) {
        return `
         Virgo: \n
         Born Aug 23 - Sep 22: \n
-        Most virgos have a hard time telling the difference between left and right.  So congratulations on not getting t-boned today...  Yet.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 266 && newRandom <= 295) {
         return `
         Libra: \n
         Born Sep 23 - Oct 22: \n
-        The perculiar medical conditions, high blood flow nipples (resulting in very purple areolas during arousal), affect both male and female alike.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 296 && newRandom <= 325) {
         return `
         Scorpio: \n
         Born Oct 23 - Nov 21: \n
-        Firey at heart, these creatures will happy cuddle you, you fall into the sweet loving and warm oblivion of their warm embrace.  It is not advised to stay in that embrace long, as they are known to melt your flesh into theirs.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else if(newRandom >= 325 && newRandom <= 355) {
         return `
         Sagittarius: \n
         Born Nov 22 - Dec 21: \n
-        Born among the cold early winter nights (or days) creatures hailing from these time frames are not the most warm of heart.  Highly intelligent they are, because the cold enhances their natural processing powers.
+        ${astrologicalFun[(returnRandomBase(astrologicalFun))]}
         `
     }else {
         console.log('Random Number out of boundry');
