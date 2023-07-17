@@ -159,12 +159,30 @@ const nonInspirations = [
     'Why did you have that ruler custom printed?  You know the one in your bathroom?',
     'Fine, I\'ll say what everyone is thinking.  Your haircut looks terrible.',
     'Yeesh, you\'re actually wearing that?  If only you could see my face right now.',
-    'When you look deep into your eyes in the mirror.. can you see why you have no friends?'
+    'When you look deep into your eyes in the mirror.. can you see why you have no friends?',
+    'The only thing more empty than you is your social circle.',
+    'Even pigs feel bad for you.',
+    'Your cats wouldn\'t even eat you if you died alone.',
+    'It\'s time for you to hear it again.  No one cares.',
+    'You, are so amazing.. at being a suckwaffle.',
+    'Thrice used toilet paper isn\'t as shitty as you.',
+    'The only useful thing you\'ll ever do is feed worms.',
+    'It\'s time to be greatful.  For everyone else, knowing they aren\'t you.',
+    'Is it normal for you to smell like you bathe in fermented durian fruit and sewage?',
+    'You have the personality of a wasp, and the face of an angler fish.',
+    'I wish I could apologize to everyone else for having to deal with you.',
+    'You\'re as useful as a hydrophobic towel.',
+    'You should be thankful the post office exists, the hospital didn\'t deliver you.',
+    'You think you\'re lucky that you\'ve never had a flaming bag of poo on your doorstep.  You aren\'t worth the effort.',
+    'Alright, give it back.  You\'re wasting that oxygen.',
+    'You\'re the reason people say Hell on Earth.'
 ]
 
 let todaysWords = nonInspirations[(Math.floor(Math.random() * nonInspirations.length))];
 return todaysWords;
 }
+
+
 
 const opPick = () => {
 
