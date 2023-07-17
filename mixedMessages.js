@@ -33,7 +33,9 @@ const randomSentance = () => {
   const verbs = ['sacking', 'programming', 'pondering', 'alloting', 'bashing', 'crafting', 'deceiving', 
 'eating', 'fumbling', 'grabbing', 'hambone', 'inking', 'jousting', 'klondiking', 'lementing', 'moaning', 'nagging',
 'ordering', 'partying', 'queueing', 'roosting', 'stamping', 'terraforming', 'upchucking', 'vilifying',
-'weakening', 'x-raying', 'yapping', 'zapping'];
+'weakening', 'x-raying', 'yapping', 'zapping', 'adore', 'buttered', 'closed', 'dotted', 'effaced', 'flopped', 'gasped', 'held', 'ingrained',
+'jabbed', 'killed', 'lingered', 'moralized', 'nicked', 'opened', 'patronize', 'quarter', 'retailate', 'summed',
+'turned', 'unloaded', 'vitrify', 'wanking', 'yoddeling',];
   const verbChoice = () => {
     let verb = (verbs[returnRandomBase(verbs)])
     return verb;
@@ -41,7 +43,9 @@ const randomSentance = () => {
 
   const objects = ['amphorah', 'basketball', 'cat', 'Doug', 'emerald', 'fan', 'garden', 'hoes', 'Ian', 
 'job', 'klienbottle', 'lamintator', 'Megan', 'Nigel', 'open-source', 'picometer', 'quarters', 'resin', 'Stanford', 'turmeric',
-'uvula', 'Vareena', 'xylophone', 'zebra'];
+'uvula', 'Vareena', 'xylophone', 'zebra', 'algebra', 'brisket', 'caludron', 'dictionary', 'eggs', 'forest', 'gremlin',
+'hostel', 'inquiry', 'Jakob', 'knife', 'ladder', 'morels', 'nettles', 'onions', 'port', 'quintessence', 'rubber-band',
+'sliver', 'turntable', 'upside down duck', 'vanity', 'wrinkles', 'xenocide', 'yo-yo', 'zoologist'];
   const objChoice = () => {
     let objs = (objects[returnRandomBase(objects)])
     return objs;
@@ -55,10 +59,44 @@ const randomSentance = () => {
     return greets;
   }
 
+const joiners = [
+    ' may be ',
+    ' could do ',
+    ' will have ',
+    ' should be ',
+    ' won\'t have ',
+    ' could have ',
+    ' will be ',
+    ' couldn\'t have ',
+    ' wouldn\'t be ',
+    ' wouldn\'t have ',
+    ' shall not ',
+    ' shall not have ',
+    ' shall not be ',
+    ' will not have ',
+    ' will have ',
+    ' may not ',
+    ' could not ',
+    ' are not ',
+    ' are ',
+    ' can be ',
+    ' cannot be ',
+    ' can do ',
+    ' cannot do ',
+    ' is a ',
+    ' is not a ',
+    ' is ',
+    ' is not ',
+]
+const joined = () => {
+    let join = joiners[(returnRandomBase(joiners))]
+    return join
+}
+
 sentance += greet();
 sentance += ', ';
 sentance += proChoice()
-sentance += " may be "
+sentance += joined();
 sentance += adjChoice() + ' '
 sentance += fanChoice()
 sentance += " a "
