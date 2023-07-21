@@ -5,60 +5,66 @@ const returnRandomBase = input => {
 const randomSentance = () => {
 
   let sentance = ''
-
+  
+const fanChoice = () => {
   const fanboys = ['for', 'and', 'nor', 'but', 'or', 'yet', 'so'];
-  const fanChoice = () => {
+  
     let choice = (fanboys[returnRandomBase(fanboys)])
     return choice;
   }
 
-  const pronouns = ['He', 'he', 'She', 'she', 'they', 'them', 'his', 'hers', 'theirs'];
-  const proChoice = () => {
+const proChoice = () => {
+  const pronouns = ['He', 'he', 'She', 'she', 'they', 'them', 'They', 'Them', 'His', 'Hers', 'his', 'hers', 'theirs', 'Theirs', 'Me', 'me', 'my', 'My', 'Mine', 'mine', 'I'];
+  
     let pros = (pronouns[returnRandomBase(pronouns)])
     return pros;
   }
 
+const adjChoice = () => {
   const adjective = ['green', 'blue', 'slippery', 'rugged', 'tough', 'enormous', 'pitiful', 'fantastic', 
-'beautiful', 'gassy', 'slightly', 'chalky', 'stinky', 'foul', 'metallic', 'shameful', 'festive',
+'beautiful', 'gassy', 'slight', 'chalky', 'stinky', 'foul', 'metallic', 'shameful', 'festive',
 'twelve', '10^e^6.016', 'wet', 'audible', 'balmy', 'calloused', 'deaf', 'enlarged', 'fragrent', 'gutted',
 'haggered', 'insatiable', 'japanese', 'korean', 'laotian', 'malaysain', 'north american', 'oceanic', 'pearl', 'quite', 'realistic',
 'sumptuous', 'tall', 'ultra-violet', 'venusian', 'watertight', 'yellow', 'zilch'];
-  const adjChoice = () => {
+
     let adjs = ''
     adjs = adjective[returnRandomBase(adjective)]
     return adjs;
   }
 
-
+const verbChoice = () => {
   const verbs = ['sacking', 'programming', 'pondering', 'alloting', 'bashing', 'crafting', 'deceiving', 
 'eating', 'fumbling', 'grabbing', 'hambone', 'inking', 'jousting', 'klondiking', 'lementing', 'moaning', 'nagging',
 'ordering', 'partying', 'queueing', 'roosting', 'stamping', 'terraforming', 'upchucking', 'vilifying',
 'weakening', 'x-raying', 'yapping', 'zapping', 'adore', 'buttered', 'closed', 'dotted', 'effaced', 'flopped', 'gasped', 'held', 'ingrained',
 'jabbed', 'killed', 'lingered', 'moralized', 'nicked', 'opened', 'patronize', 'quarter', 'retailate', 'summed',
-'turned', 'unloaded', 'vitrify', 'wanking', 'yoddeling',];
-  const verbChoice = () => {
+'turned', 'unloaded', 'vitrify', 'wanking', 'yoddeling'];
+  
     let verb = (verbs[returnRandomBase(verbs)])
     return verb;
   }
 
+const objChoice = () => {
   const objects = ['amphorah', 'basketball', 'cat', 'Doug', 'emerald', 'fan', 'garden', 'hoes', 'Ian', 
 'job', 'klienbottle', 'lamintator', 'Megan', 'Nigel', 'open-source', 'picometer', 'quarters', 'resin', 'Stanford', 'turmeric',
 'uvula', 'Vareena', 'xylophone', 'zebra', 'algebra', 'brisket', 'caludron', 'dictionary', 'eggs', 'forest', 'gremlin',
 'hostel', 'inquiry', 'Jakob', 'knife', 'ladder', 'morels', 'nettles', 'onions', 'port', 'quintessence', 'rubber-band',
 'sliver', 'turntable', 'upside down duck', 'vanity', 'wrinkles', 'xenocide', 'yo-yo', 'zoologist'];
-  const objChoice = () => {
+ 
     let objs = (objects[returnRandomBase(objects)])
     return objs;
   }
 
+  const greet = () => {
   const greetings = ['Hello', 'Bonjour', 'Guten Tag', 'Marhaba', 'Ahoj', 'Hej', 'Salam', 'Dia dhuit', 
 'Geia', 'Namaste', 'Ciao', 'Konichiwa', 'Anyeong haseyo', 'Salve', 'Ni hao', 'Namaskara', 'Privet',
 'Hola', 'Halla', 'Swasdi', 'Assalamu Alaykum'];
-  const greet = () => {
+
     let greets = greetings[returnRandomBase(greetings)]
     return greets;
   }
 
+const joined = () => {
 const joiners = [
     ' may be ',
     ' could do ',
@@ -88,7 +94,6 @@ const joiners = [
     ' is ',
     ' is not ',
 ]
-const joined = () => {
     let join = joiners[(returnRandomBase(joiners))]
     return join
 }
@@ -220,7 +225,7 @@ const nonInspirations = [
     'Just stop.  You cannot do it.',
     'People are looking at you weird..  What did you do?',
     'You should really hide and give yourself a whiff.  Did you shower?',
-    'Stop deep scratching your bunghole in the library.  You\'ll leave crappy fingerprints on the pages.',
+    'Stop deep scratching your bunghole in the library.  You\'ll leave gross fingerprints on the pages.',
     'Dude, stop touching the controlling device.  Your fingers are grossly sticky.',
     'It is pretty clear why your mother doesn\'t love you anymore.',
     'Why did you have that ruler custom printed?  You know the one in your bathroom?',
@@ -247,28 +252,6 @@ const nonInspirations = [
 
 let todaysWords = nonInspirations[(Math.floor(Math.random() * nonInspirations.length))];
 return todaysWords;
-}
-
-
-
-const opPick = () => {
-
-  let num = Math.floor(Math.random() * 3);
-
-  switch(num){
-
-    case 0:
-      console.log(randomSentance());
-      break;
-    case 1:
-      console.log(randomAstrology());
-      break;
-    case 2:
-      console.log(inspiringWords());
-      break;
-    default:
-      console.log('Ehh What you want from me ``-_-')
-}
 }
 
 setTimeout(() => '', 850);
